@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link href="{{url_for('static',filename='css/output.css')}}" rel="stylesheet">
+</head>
+<body class="flex flex-col justify-center bg-gray-900">
+    <header class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">JN University</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-white">Contact Us</a>
+            
+
+          </nav>
+          <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Log out
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <section class="text-gray-400 bg-gray-900 body-font relative">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Student stats</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">the details of the students are showed below.</p>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">the current details are for the students of your batch.</p>
+          </div>
+          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <div class="flex flex-wrap -m-2">
+            
+
+<div class="relative overflow-x-auto px-12">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    ER No.
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Student name
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Fees pending
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Pass/Fail
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    attendance
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    email
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    1
+                </th>
+                <td class="px-6 py-4">
+                    name
+                </td>
+                <td class="px-6 py-4">
+                    yes
+                </td>
+                <td class="px-6 py-4">
+                    marks
+                </td>
+                <td class="px-6 py-4">
+                    na/na
+                </td>
+                <td class="px-6 py-4">
+                    email
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                2
+              </th>
+              <td class="px-6 py-4">
+                name
+              </td>
+              <td class="px-6 py-4">
+                yes
+              </td>
+              <td class="px-6 py-4">
+                marks
+              </td>
+              <td class="px-6 py-4">
+                na/na
+              </td>
+              <td class="px-6 py-4">
+                email
+              </td>
+          </tr>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                3
+            </th>
+            <td class="px-6 py-4">
+                name
+            </td>
+            <td class="px-6 py-4">
+                yes
+            </td>
+            <td class="px-6 py-4">
+                marks
+            </td>
+            <td class="px-6 py-4">
+                na/na
+            </td>
+            <td class="px-6 py-4">
+                email
+            </td>
+        </tr>
+        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+            4
+          </th>
+          <td class="px-6 py-4">
+            name
+          </td>
+          <td class="px-6 py-4">
+            yes
+          </td>
+          <td class="px-6 py-4">
+            marks
+          </td>
+          <td class="px-6 py-4">
+            na/na
+          </td>
+          <td class="px-6 py-4">
+            email
+          </td>
+      </tr>
+      <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+            5
+        </th>
+        <td class="px-6 py-4">
+            name
+        </td>
+        <td class="px-6 py-4">
+            yes
+        </td>
+        <td class="px-6 py-4">
+            marks
+        </td>
+        <td class="px-6 py-4">
+            na/na
+        </td>
+        <td class="px-6 py-4">
+            email
+        </td>
+    </tr>
+    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+      <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+        6
+      </th>
+      <td class="px-6 py-4">
+        name
+      </td>
+      <td class="px-6 py-4">
+        yes
+      </td>
+      <td class="px-6 py-4">
+        marks
+      </td>
+      <td class="px-6 py-4">
+        na/na
+      </td>
+      <td class="px-6 py-4">
+        email
+      </td>
+  </tr>
+  <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+      7
+    </th>
+    <td class="px-6 py-4">
+        name
+    </td>
+    <td class="px-6 py-4">
+        yes
+    </td>
+    <td class="px-6 py-4">
+      marks
+    </td>
+    <td class="px-6 py-4">
+        na/na
+    </td>
+    <td class="px-6 py-4">
+        email
+    </td>
+</tr>
+<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+      8
+    </th>
+    <td class="px-6 py-4">
+        name
+    </td>
+    <td class="px-6 py-4">
+        yes
+    </td>
+    <td class="px-6 py-4">
+      marks
+    </td>
+    <td class="px-6 py-4">
+        na/na
+    </td>
+    <td class="px-6 py-4">
+        email
+    </td>
+</tr>
+<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+      9
+    </th>
+    <td class="px-6 py-4">
+        name
+    </td>
+    <td class="px-6 py-4">
+        yes
+    </td>
+    <td class="px-6 py-4">
+      marks
+    </td>
+    <td class="px-6 py-4">
+        na/na
+    </td>
+    <td class="px-6 py-4">
+        email
+    </td>
+</tr>
+<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+      10
+    </th>
+    <td class="px-6 py-4">
+        name
+    </td>
+    <td class="px-6 py-4">
+        yes
+    </td>
+    <td class="px-6 py-4">
+      marks
+    </td>
+    <td class="px-6 py-4">
+        na/na
+    </td>
+    <td class="px-6 py-4">
+        email
+    </td>
+</tr>
+<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+      11
+    </th>
+    <td class="px-6 py-4">
+        name
+    </td>
+    <td class="px-6 py-4">
+        yes
+    </td>
+    <td class="px-6 py-4">
+      marks
+    </td>
+    <td class="px-6 py-4">
+        na/na
+    </td>
+    <td class="px-6 py-4">
+        email
+    </td>
+</tr>
+<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+      12
+    </th>
+    <td class="px-6 py-4">
+        name
+    </td>
+    <td class="px-6 py-4">
+        yes
+    </td>
+    <td class="px-6 py-4">
+      marks
+    </td>
+    <td class="px-6 py-4">
+        na/na
+    </td>
+    <td class="px-6 py-4">
+        email
+    </td>
+</tr>
+<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+      13
+    </th>
+    <td class="px-6 py-4">
+        name
+    </td>
+    <td class="px-6 py-4">
+        yes
+    </td>
+    <td class="px-6 py-4">
+      marks
+    </td>
+    <td class="px-6 py-4">
+        na/na
+    </td>
+    <td class="px-6 py-4">
+        email
+    </td>
+</tr>
+<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+      14
+    </th>
+    <td class="px-6 py-4">
+        name
+    </td>
+    <td class="px-6 py-4">
+        yes
+    </td>
+    <td class="px-6 py-4">
+      marks
+    </td>
+    <td class="px-6 py-4">
+        na/na
+    </td>
+    <td class="px-6 py-4">
+        email
+    </td>
+</tr>
+<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+      15
+    </th>
+    <td class="px-6 py-4">
+        name
+    </td>
+    <td class="px-6 py-4">
+        yes
+    </td>
+    <td class="px-6 py-4">
+      marks
+    </td>
+    <td class="px-6 py-4">
+        na/na
+    </td>
+    <td class="px-6 py-4">
+        email
+    </td>
+</tr>
+<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+      16
+    </th>
+    <td class="px-6 py-4">
+        name
+    </td>
+    <td class="px-6 py-4">
+        yes
+    </td>
+    <td class="px-6 py-4">
+      marks
+    </td>
+    <td class="px-6 py-4">
+        na/na
+    </td>
+    <td class="px-6 py-4">
+        email
+    </td>
+</tr>
+<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+      17
+    </th>
+    <td class="px-6 py-4">
+        name
+    </td>
+    <td class="px-6 py-4">
+        yes
+    </td>
+    <td class="px-6 py-4">
+      marks
+    </td>
+    <td class="px-6 py-4">
+        na/na
+    </td>
+    <td class="px-6 py-4">
+        email
+    </td>
+</tr>
+<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+      18
+    </th>
+    <td class="px-6 py-4">
+        name
+    </td>
+    <td class="px-6 py-4">
+        yes
+    </td>
+    <td class="px-6 py-4">
+      marks
+    </td>
+    <td class="px-6 py-4">
+        na/na
+    </td>
+    <td class="px-6 py-4">
+        email
+    </td>
+</tr>
+<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+      19
+    </th>
+    <td class="px-6 py-4">
+        name
+    </td>
+    <td class="px-6 py-4">
+      yes
+    </td>
+    <td class="px-6 py-4">
+      marks
+    </td>
+    <td class="px-6 py-4">
+        na/na
+    </td>
+    <td class="px-6 py-4">
+        email
+    </td>
+</tr>
+        </tbody>
+    </table>
+</div>
+
+          </div>
+        </div>
+      </section>
+      <footer class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-8 pt-24 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">JN Unitech</span>
+          </a>
+          <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2024 University —
+            <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer" previewlistener="true">@aaspar</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-400">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-400">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-400">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-400">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
+</body>
+</html>
